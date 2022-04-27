@@ -1,0 +1,140 @@
+body {
+  background: lightblue;
+  font-family: 'Nunito', sans-serif;
+  color: #222;
+}
+
+.header {
+  background: yellow;
+  color: white;
+  padding: 10px;
+  @media (max-width: 700px) {
+    .site-title, .site-tagline {
+      width: 100%;
+      text-align: center;
+    }
+    .site-title {
+      margin: 0;
+    }
+  }
+}
+
+.main-nav{
+   background: red;
+   color: white;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+nav li {
+display: inline-block;
+}
+
+ a {
+   color: darkblue;
+    text-decoration: none;
+      padding: 15px 35px;
+      display: flex;
+      text-transform: uppercase;
+      &:hover, &:focus {
+        background: lighten(yellow, 25%);
+        color: lighten(darkblue, 25%);
+      }
+}
+
+.item{
+  padding: 25px;
+    max-width: 47%;
+    background: lighten(black, 45%);
+    color: black;
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden; 
+}
+   
+.footer {
+  background: salmon;
+  color: white;
+  padding: em(15px);
+  text-align: center;
+  font-size: em(13px);
+}
+
+.Sample Image {
+  width: 100%;
+  height: auto;
+}
+
+.logo{
+   height:50px;
+  width:60px;
+}
+table {
+  width: 1000px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+	vertical-align: middle;
+}
+/*table center alignment, table header cells*/
+
+th, td {
+    border: none;
+    padding: 8px;
+  }
+/*solid boarder*/
+
+  thead th {
+    width: 25%;
+  }
+
+  body {
+    font-family: sans-serif;
+  }
+
+  caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    color: #333;
+  }
+  /*table caption*/
+
+  thead {
+    background-color: #333;
+    color: white;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  tbody th {
+    background-color:gold;
+    color: #333;
+    text-align: left;
+  }
+  /*filled cell color*/
+  .cell-highlight {
+    background-color:red;
+    font-weight: bold;
+  }
+  .student{
+    background-color: black;
+    color: #eee;
+  }
+
+img {
+  float: right;
+}
